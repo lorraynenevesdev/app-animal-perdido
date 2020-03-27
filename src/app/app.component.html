@@ -1,4 +1,4 @@
-<div fxFlex fxLayout="column" style="height:100vh" >
+<div fxFlex fxLayout="column" >
 
   <div class="container"
     fxLayout
@@ -7,8 +7,14 @@
     fxLayoutGap="10px"
     fxLayoutGap.xs="0">
     <div class="item item-4" fxFlex fxFlexOffset="50px"  fxFlexOffset.xs="0"><span>App Animais Perdidos</span></div>
-    <div class="item item-5" fxFlex="200px">
-      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <div class="item item-5 example-button-row" fxFlex>
+
+        <a routerLink= "/lista-animais-perdidos" mat-flat-button >Listar Animais Perdidos</a>
+        <a routerLink= "/cadastro-animais-perdidos" mat-flat-button >Cadastre Animais Perdidos</a>
+
+
+
+      <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
         <mat-icon>more_vert</mat-icon>
       </button>
       <mat-menu #menu="matMenu">
@@ -23,7 +29,7 @@
           <mat-icon>notifications_off</mat-icon>
           <span>Disable alerts</span>
         </button>
-      </mat-menu>
+      </mat-menu> -->
     </div>
 </div>
     

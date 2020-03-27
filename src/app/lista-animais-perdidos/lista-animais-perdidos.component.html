@@ -14,8 +14,7 @@
                     <div mat-card-avatar class="example-header-image"></div>
                     <mat-card-title style="text-align:center;">{{animalperdido.especie}}</mat-card-title>
                 </mat-card-header>
-                <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
-                <img mat-card-image src="{{urlbackend}}{{animalperdido.foto}}" alt="Photo of a Shiba Inu">
+                <img mat-card-image src="{{urlbackend}}{{animalperdido.foto}}" >
                 <mat-card-content>
                     <h4>Características Gerais:</h4>
                     <p>
@@ -48,26 +47,6 @@
 
         </div> -->
    </div>
-
-        <!-- <table  fxFlex="100%" *ngIf="responseListaAnimalPerdido">
-            <thead>
-                <tr>
-                    <th>Caracteristicas do animal encontrado</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let animalperdido of responseListaAnimalPerdido.data">
-                    <td>
-                        <div class="item item-1" fxFlex="100%"><
-                    </td>
-                    <td>{{animalperdido.especie}}</td>
-                    <td>{{animalperdido.caracteristicas_fisicas}}</td>
-                    <td>{{animalperdido.quando}}</td>
-                    <td>{{animalperdido.onde}}</td>
-                    <td>{{animalperdido.foto}}</td>
-                </tr>
-            </tbody>
-        </table> -->
           
   </div>
 </div>
