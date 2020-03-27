@@ -1,0 +1,73 @@
+
+<div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+  <div class="item item-1" fxFlex="100%" *ngIf="responseListaAnimalPerdido" >
+    <div class="container containeranimal" style="margin-bottom: 30px;" fxLayout fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px" fxLayoutGap.xs="0" *ngFor="let animalperdido of responseListaAnimalPerdido.data" >
+     
+        <div class="item item-2" fxFlex fxFlexOffset="50px" fxFlex="600px"  fxFlexOffset.xs="0">
+           <mat-card class="example-card">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title style="text-align:center;">{{animalperdido.especie}}</mat-card-title>
+                </mat-card-header>
+                <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+                <img mat-card-image src="http://localhost:3000{{animalperdido.foto}}" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <h4>Características Gerais:</h4>
+                    <p>
+                        {{animalperdido.caracteristicas_fisicas}}
+                    </p>
+
+                    <h4>Onde foi encontrado:</h4>
+                    <p>
+                        {{animalperdido.onde}}
+                    </p>
+
+                    <h4>Quando foi encontrado:</h4>
+                    <p>
+                        {{animalperdido.quando}}
+                    </p>
+
+                </mat-card-content>
+
+                <mat-card-actions>
+                        <a mat-button fxFlex  routerLink="/edicao-animais-perdidos/{{animalperdido.idanimal_perdido}}" >Editar</a>
+                        <!-- <button mat-button fxFlex fxFlexOffset="50px" >Remover</button> -->
+                      </mat-card-actions>
+            </mat-card>
+        </div>
+        <!-- <div class="item item-3" fxFlex="400px">
+            <h4>Quando foi encontrado:</h4>
+            {{animalperdido.quando}}
+            <h4>Onde foi encontrado:</h4>
+            {{animalperdido.onde}}
+
+        </div> -->
+   </div>
+
+        <!-- <table  fxFlex="100%" *ngIf="responseListaAnimalPerdido">
+            <thead>
+                <tr>
+                    <th>Caracteristicas do animal encontrado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let animalperdido of responseListaAnimalPerdido.data">
+                    <td>
+                        <div class="item item-1" fxFlex="100%"><
+                    </td>
+                    <td>{{animalperdido.especie}}</td>
+                    <td>{{animalperdido.caracteristicas_fisicas}}</td>
+                    <td>{{animalperdido.quando}}</td>
+                    <td>{{animalperdido.onde}}</td>
+                    <td>{{animalperdido.foto}}</td>
+                </tr>
+            </tbody>
+        </table> -->
+          
+  </div>
+</div>

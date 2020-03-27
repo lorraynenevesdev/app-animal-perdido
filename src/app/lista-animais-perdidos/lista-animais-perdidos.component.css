@@ -1,0 +1,23 @@
+table{
+    border-collapse: collapse;
+}
+table th,td{
+    border : solid 1px #dddddd;
+}
+
+table td{
+    padding-left: 10px;
+}
+
+table th{
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+table{
+    margin: 10px;
+}
+
+h4{
+    font-weight: bold;
+}
