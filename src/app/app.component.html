@@ -5,47 +5,19 @@
     fxLayout.xs="column"
     fxLayoutAlign="center"
     fxLayoutGap="10px"
-    fxLayoutGap.xs="0">
-    <div class="item item-4" fxFlex fxFlexOffset="50px"  fxFlexOffset.xs="0"><span>App Animais Perdidos</span></div>
-    <div class="item item-5 example-button-row" fxFlex>
+    fxLayoutGap.xs="0" style="background:#ddd; min-height: 50px;">
+      <div class="item item-4" fxFlex fxFlexOffset="50px"  fxFlexOffset.xs="0"><span style="line-height:47px;">App Animais Perdidos</span></div>
+      <div class="item item-5 example-button-row" fxFlex>
 
-        <a routerLink= "/lista-animais-perdidos" mat-flat-button >Listar Animais Perdidos</a>
-        <a routerLink= "/cadastro-animais-perdidos" mat-flat-button >Cadastre Animais Perdidos</a>
+          <a routerLink= "/lista-animais-perdidos" mat-flat-button style="margin:10px;" >Listar Animais Perdidos</a>
+          <a routerLink= "/cadastro-animais-perdidos" mat-flat-button style="margin:10px;" >Cadastre Animais Perdidos</a>
 
-
-
-      <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-        <mat-icon>more_vert</mat-icon>
-      </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>
-          <a routerLink= "/lista-animais-perdidos">Lista Animais Perdidos</a>
-          
-        </button>
-        <button mat-menu-item disabled>
-          <a href= "/cadastro-animais-perdidos">Cadastre Animais Perdidos</a>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>notifications_off</mat-icon>
-          <span>Disable alerts</span>
-        </button>
-      </mat-menu> -->
-    </div>
-</div>
+      </div>
+  </div>
     
   
 
-      <div fxFlex fxLayout="column" fxLayoutGap="10px" style="height:100vh" style="background:#222;">
-        
-        <!-- <h1>Animais Perdidos </h1>
-        
-        <div>
-          <a routerLink= "/cadastro-animais-perdidos">Cadastre Animais Perdidos</a>
-          <br>
-          <a routerLink= "/lista-animais-perdidos">Lista Animais Perdidos</a>
-        </div> -->
-        <!--  -->
-          
+      <div fxFlex fxLayout="column" fxLayoutGap="10px" >  
         
         <router-outlet></router-outlet>
       

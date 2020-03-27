@@ -13,3 +13,7 @@ h2{
     margin: 5px; 
     line-height: 27px; 
 }
+
+html, body{
+    height:100% ;
+}
