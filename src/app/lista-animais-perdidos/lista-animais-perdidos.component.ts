@@ -10,6 +10,7 @@ import { ResponseAnimalPerdido } from './animal-perdido.model';
 export class ListaAnimaisPerdidosComponent implements OnInit {
 
   tituloPagina = "Animais Perdidos";
+  urlbackend = "https://api-animal-perdido.herokuapp.com/"; 
 
   responseListaAnimalPerdido: ResponseAnimalPerdido;
   

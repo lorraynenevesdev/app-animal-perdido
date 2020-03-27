@@ -9,7 +9,7 @@ import { HttpClient } from "@angular/common/http";
 })
 export class CadstroAnimaisPerdidoService {
 
-  private url ="http://localhost:3000/animal-perdido" ;
+  private url ="https://api-animal-perdido.herokuapp.com/animal-perdido" ;
   
   constructor(private http: HttpClient) { }
 

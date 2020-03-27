@@ -32,6 +32,8 @@ export class UpdateAnimaisPerdidosComponent implements OnInit {
 
   requestUpdate: RequestAnimalPerdidoUpdate; 
 
+  urlbackend = "https://api-animal-perdido.herokuapp.com/"; 
+
   @ViewChild("fileUpload", {static: false}) fileUpload: ElementRef; files  = [];  
 
   ngOnInit(): void {

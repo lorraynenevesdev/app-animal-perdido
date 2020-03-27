@@ -7,7 +7,7 @@ import { map } from  'rxjs/operators';
 })
 export class UploadService {
 
-  url: string = "http://localhost:3000/upload-file";  
+  url: string = "https://api-animal-perdido.herokuapp.com/upload-file";  
 
   constructor(private httpClient: HttpClient) { }
   
