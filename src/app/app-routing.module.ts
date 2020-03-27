@@ -8,7 +8,8 @@ import { UpdateAnimaisPerdidosComponent } from './update-animais-perdidos/update
 const routes: Routes = [
   {path: 'cadastro-animais-perdidos' , component: CadastroAnimaisPerdidosComponent},
   {path: 'lista-animais-perdidos' , component: ListaAnimaisPerdidosComponent},
-  {path: 'edicao-animais-perdidos/:id' , component: UpdateAnimaisPerdidosComponent}
+  {path: 'edicao-animais-perdidos/:id' , component: UpdateAnimaisPerdidosComponent},
+  {path: '' , component: ListaAnimaisPerdidosComponent},
 ];
 
 @NgModule({
