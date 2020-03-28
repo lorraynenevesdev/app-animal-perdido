@@ -11,7 +11,7 @@
 
                     <div class="item item-2" fxFlex fxFlexOffset="50px" fxFlex="500px" style="margin-bottom:500px"    fxFlexOffset.xs="0">
                         
-                        <div *ngIf="response" style="background:#696969; color:white; padding: 5px; border-radius: 5px;">
+                        <div *ngIf="response" class="alerta-cadastro">
                             <p>Animal Cadastrado com Sucesso!</p>
                         </div>
             
@@ -53,12 +53,6 @@
                                                     <mat-datepicker #picker></mat-datepicker>
                                                     </mat-form-field>
             
-                                                    <!-- <mat-form-field>
-                                                        <mat-label> Foto: </mat-label>
-                                                        <input matInput [matDatepicker]="picker" [(ngModel)] = "request.quando" >
-                                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                                                        <mat-datepicker #picker></mat-datepicker>
-                                                    </mat-form-field> -->
                                             </div>
             
                                     <label>Foto:</label>
@@ -89,6 +83,7 @@
                         
                             <mat-card-actions>
                                  <button mat-raised-button color="primary" (click)="save()">Salvar</button>
+                                 <a routerLink= "/lista-animais-perdidos" mat-raised-button color = "warn"> Voltar</a>
                             </mat-card-actions>
                         </mat-card>
                 </div>
@@ -97,17 +92,4 @@
             
         </div>
     </div>
-</div>
-
-
-
-
-
-
-<div *ngIf = "response">
-    <h3>Cadastrado com Sucesso ! </h3>
-    <label>Especíe: {{response.data.especie}}</label> <br>
-    <label>Caracteristícas Fisícas: {{response.data.caracteristicas_fisicas}}</label><br>
-    <label>Local: {{response.data.onde}}</label><br>
-    <label>Data: {{response.data.quando}}</label><br>
 </div>
